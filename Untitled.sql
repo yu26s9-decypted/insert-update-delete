@@ -31,6 +31,8 @@ VALUES
     5
 );
 -- 3. List all products and their suppliers.
+SELECT * FROM suppliers
+INNER JOIN products ON suppliers.supplierid = products.supplierid;
 -- 4. Raise the price of your new product by 15%.
 -- 5. List the products and prices of all products from that supplier.
 -- 6. Delete the new product.
