@@ -42,6 +42,8 @@ SELECT * FROM products
 INNER JOIN suppliers ON suppliers.supplierid = products.supplierid
 WHERE products.supplierid = 30;
 -- 6. Delete the new product.
+DELETE FROM products
+WHERE productname = "AndyBook Pro 15";
 -- 7. Delete the new supplier.
 -- 8. List all products.
 -- 9. List all suppliers.
