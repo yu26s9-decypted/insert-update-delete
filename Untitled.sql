@@ -1,0 +1,27 @@
+use northwind;
+
+-- 1. Add a new supplier.
+INSERT INTO suppliers
+(companyname, contactname, contacttitle, address, city, region, postalcode, country, phone, fax, homepage)
+VALUES
+(
+    'Andy Logistic',
+    'Andy',
+    'CEO',
+    '123 Saint Street',
+    'New York City',
+    'NY',
+    '11213',
+    'USA',
+    '123-456-7890',
+    '123-456-7891',
+    'https://www.andylogistic.com'
+);
+-- 2. Add a new product provided by that supplier
+-- 3. List all products and their suppliers.
+-- 4. Raise the price of your new product by 15%.
+-- 5. List the products and prices of all products from that supplier.
+-- 6. Delete the new product.
+-- 7. Delete the new supplier.
+-- 8. List all products.
+-- 9. List all suppliers.
