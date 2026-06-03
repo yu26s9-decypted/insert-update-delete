@@ -45,5 +45,7 @@ WHERE products.supplierid = 30;
 DELETE FROM products
 WHERE productname = "AndyBook Pro 15";
 -- 7. Delete the new supplier.
+DELETE FROM suppliers
+WHERE companyname = "Andy Logistic"
 -- 8. List all products.
 -- 9. List all suppliers.
