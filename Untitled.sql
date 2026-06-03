@@ -24,17 +24,22 @@ VALUES
 (
     'AndyBook Pro 15',
     30,
-    1,
+    8,
     '1 laptop',
     1299.99,
     25,
     5
 );
 -- 3. List all products and their suppliers.
+
+
+SELECT last_insert_id();
+
 SELECT * FROM suppliers
 INNER JOIN products ON suppliers.supplierid = products.supplierid;
 -- 4. Raise the price of your new product by 15%.
-SELECT productname, unitprice, unitprice * 1.15 AS "new price" FROM products
+UPDATE products
+SET unitprice = unitprice * 1.15
 WHERE productname = "AndyBook Pro 15";
 
 -- 5. List the products and prices of all products from that supplier.
@@ -46,6 +51,8 @@ DELETE FROM products
 WHERE productname = "AndyBook Pro 15";
 -- 7. Delete the new supplier.
 DELETE FROM suppliers
-WHERE companyname = "Andy Logistic"
+WHERE companyname = "Andy Logistic";
 -- 8. List all products.
+SELECT * FROM products;
 -- 9. List all suppliers.
+SELECT * FROM suppliers;
