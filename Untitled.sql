@@ -34,7 +34,13 @@ VALUES
 SELECT * FROM suppliers
 INNER JOIN products ON suppliers.supplierid = products.supplierid;
 -- 4. Raise the price of your new product by 15%.
+SELECT productname, unitprice, unitprice * 1.15 AS "new price" FROM products
+WHERE productname = "AndyBook Pro 15";
+
 -- 5. List the products and prices of all products from that supplier.
+SELECT * FROM products
+INNER JOIN suppliers ON suppliers.supplierid = products.supplierid
+WHERE products.supplierid = 30;
 -- 6. Delete the new product.
 -- 7. Delete the new supplier.
 -- 8. List all products.
