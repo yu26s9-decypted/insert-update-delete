@@ -18,6 +18,18 @@ VALUES
     'https://www.andylogistic.com'
 );
 -- 2. Add a new product provided by that supplier
+INSERT INTO products
+(ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder)
+VALUES
+(
+    'AndyBook Pro 15',
+    30,
+    1,
+    '1 laptop',
+    1299.99,
+    25,
+    5
+);
 -- 3. List all products and their suppliers.
 -- 4. Raise the price of your new product by 15%.
 -- 5. List the products and prices of all products from that supplier.
