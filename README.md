@@ -4,7 +4,7 @@ SQL exercises practicing DML (Data Manipulation Language) operations — the sta
 
 ## About This Project
 
-Created at **LTCA (Liftoff Tech Career Accelerator)** as part of the SQL curriculum. While earlier exercises focused on reading data, this project covers how to write, change, and remove records in a relational database.
+Created at **Year Up United — Learn to Code Academy (LTCA)** as part of the SQL curriculum. While earlier exercises focused on reading data, this project covers how to write, change, and remove records in a relational database.
 
 ## What I Learned
 
